@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* CSS VARIABLES */
+:root {
+    /* HEADING */
+    --HEADING-FF: "Big Shoulders Display";
+    /* HEADING XL */
+    --HXL-FS: 96px;
+    --HXL-FW: 900;
+    --HXL-LH: 88px;
+
+    /* HEADING L */
+    --HL-FS: 70px;
+    --HL-FW: 900;
+    --HL-LH: 70px;
+
+    /* HEADING M */
+    --HM-FS: 60px;
+    --HM-FW: 900;
+    --HM-LH: 60px;
+
+    /* HEADING S */
+    --HS-FS: 36px;
+    --HS-FW: 900;
+    --HS-LH: 36px;
+
+    /* BODY */
+    --BODY-FF: "Outfit";
+    /* BODY M */
+    --BM-FS: 22px;
+    --BM-FW: 300;
+    --BM-LH: 32px;
+
+    /* BODY S */
+    --BS-FS: 18px;
+    --BS-FW: 300;
+    --BS-LH: 28px;
+
+    /* COLORS */
+    --BROWN: #D5966C;
+    --BLACK: #151515;
+    --GREY: #444444;
+    --WHITE: #FFFFFF;
+}
