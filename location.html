@@ -1,32 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Laura Ogbechie">
-  <meta name="description" content="Frontend Mentor - Art Gallery">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Art gallery website</title>
-</head>
-<body>
-  Back to Home
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Laura Ogbechie" />
+    <meta name="description" content="Frontend Mentor - Art Gallery" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Art gallery website</title>
+  </head>
+  <body>
+    <main class="location__main">
+      <div class="map">
+        <img
+          class="map__image-d desktop"
+          src="./assets/desktop/image-map@2x.png"
+          alt="Map showing location of gallery"
+        />
+        <img
+          class="map__image-t tablet"
+          src="./assets/tablet/image-map@2x.png"
+          alt="Map showing location of gallery"
+        />
+        <img
+          class="map__image-m mobile"
+          src="./assets/mobile/image-map@2x.png"
+          alt="Map showing location of gallery"
+        />
+        <div class="home__button">
+          <img
+            style="background-color: black"
+            src="./assets/icon-arrow-right.svg"
+            alt=""
+          />
+          <button><a href="./index.html">Back to Home</a></button>
+        </div>
+      </div>
 
-  Our location
+      <section class="location">
+        <h3 class="location__h3">Our location</h3>
+        <div class="location__details">
+          <p class="location__p">99 King Street</p>
+          <span>Newport</span>
+          <span>RI 02840</span>
+          <span>United States of America</span>
+          <span
+            >Our newly opened gallery is located near the Edward King House on
+            99 King Street, the Modern Art Gallery is free to all visitors and
+            open seven days a week from 8am to 9pm.</span
+          >
+        </div>
+      </section>
+    </main>
 
-  99 King Street
-  Newport
-  RI 02840
-  United States of America
-
-  Our newly opened gallery is located near the Edward King House on 99 King
-  Street, the Modern Art Gallery is free to all visitors and open seven days
-  a week from 8am to 9pm.
-
-  Modern Art Gallery
-
-  The Modern Art Gallery is free to all visitors and open seven days a week
-  from 8am to 9pm. Find us at 99 King Street, Newport, USA.
-
-</body>
+    <footer class="footer">
+      <img class="footer__logo" src="./assets/logo-dark.svg" alt="Dark logo" />
+      <p class="footer__p">
+        The Modern Art Gallery is free to all visitors and open seven days a
+        week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+      </p>
+      <img
+        src="./assets/location_socials.svg"
+        alt="link to all docial media platforms"
+      />
+    </footer>
+  </body>
 </html>
