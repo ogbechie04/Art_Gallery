@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap");
 
 *,
 *::before,
@@ -38,43 +38,126 @@ h6 {
 
 /* CSS VARIABLES */
 :root {
-    /* HEADING */
-    --HEADING-FF: "Big Shoulders Display";
-    /* HEADING XL */
-    --HXL-FS: 96px;
-    --HXL-FW: 900;
-    --HXL-LH: 88px;
+  /* HEADING */
+  --HEADING-FF: "Big Shoulders Display";
+  /* HEADING XL */
+  --HXL-FS: 96px;
+  --HXL-FW: 900;
+  --HXL-LH: 88px;
 
-    /* HEADING L */
-    --HL-FS: 70px;
-    --HL-FW: 900;
-    --HL-LH: 70px;
+  /* HEADING L */
+  --HL-FS: 70px;
+  --HL-FW: 900;
+  --HL-LH: 70px;
 
-    /* HEADING M */
-    --HM-FS: 60px;
-    --HM-FW: 900;
-    --HM-LH: 60px;
+  /* HEADING M */
+  --HM-FS: 60px;
+  --HM-FW: 900;
+  --HM-LH: 60px;
 
-    /* HEADING S */
-    --HS-FS: 36px;
-    --HS-FW: 900;
-    --HS-LH: 36px;
+  /* HEADING S */
+  --HS-FS: 36px;
+  --HS-FW: 900;
+  --HS-LH: 36px;
 
-    /* BODY */
-    --BODY-FF: "Outfit";
-    /* BODY M */
-    --BM-FS: 22px;
-    --BM-FW: 300;
-    --BM-LH: 32px;
+  /* BODY */
+  --BODY-FF: "Outfit";
+  /* BODY M */
+  --BM-FS: 22px;
+  --BM-FW: 300;
+  --BM-LH: 32px;
 
-    /* BODY S */
-    --BS-FS: 18px;
-    --BS-FW: 300;
-    --BS-LH: 28px;
+  /* BODY S */
+  --BS-FS: 18px;
+  --BS-FW: 300;
+  --BS-LH: 28px;
 
-    /* COLORS */
-    --BROWN: #D5966C;
-    --BLACK: #151515;
-    --GREY: #444444;
-    --WHITE: #FFFFFF;
+  /* COLORS */
+  --BROWN: #d5966c;
+  --BLACK: #151515;
+  --GREY: #444444;
+  --WHITE: #ffffff;
 }
+
+.tablet,
+.mobile {
+  display: none;
+}
+
+/* HOME PAGE */
+.hero {
+  display: flex;
+}
+.hero__content {
+  display: flex;
+  position: relative;
+  height: 800px;
+  width: 990px;
+}
+
+.hero__black-box {
+  display: inline-block;
+  background-color: var(--BLACK);
+  width: 450px;
+  position: relative;
+}
+
+.hero__image-d {
+  display: inline-block;
+  width: 540px;
+}
+
+.hero__h2 {
+  position: absolute;
+  left: 165px;
+  top: 189px;
+  font-family: var(--HEADING-FF);
+  font-size: var(--HXL-FS);
+  font-weight: var(--HXL-FW);
+  line-height: var(--HXL-LH);
+  background: linear-gradient(to right, var(--WHITE) 63%, black 37%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero__visit {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 190px;
+  gap: 64px;
+  margin-inline-start: -65px;
+  z-index: 1;
+}
+
+.hero span {
+  width: 350px;
+  font-family: var(--BODY-FF);
+  font-size: var(--BM-FS);
+  font-weight: var(--BM-FW);
+  line-height: var(--BM-LH);
+}
+
+.hero__button {
+  display: flex;
+  height: 72px;
+}
+
+.hero__button button {
+  border: none;
+  background-color: var(--BLACK);
+  padding-block-start: 24px;
+  padding-inline-end: 35px;
+  padding-block-end: 24px;
+  padding-inline-start: 32px;
+}
+
+.hero__button a {
+  color: var(--WHITE);
+  font-family: var(--HEADING-FF);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 3.636px;
+}
+
+/* MAIN SECTION - GRID */
