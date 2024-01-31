@@ -407,7 +407,6 @@ h6 {
 
   .hero span {
     width: 339px;
-    font-family: var(--BODY-FF);
     font-size: var(--BS-FS);
     font-weight: var(--BS-FW);
     line-height: var(--BS-LH);
@@ -536,5 +535,135 @@ h6 {
 
   .footer__location {
     margin-block-start: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .desktop,
+  .tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+  /* HOME PAGE */
+
+  /* HERO SECTION */
+  .hero {
+    position: unset;
+    flex-direction: column;
+  }
+  .hero__content {
+    display: block;
+    position: unset;
+    height: 100%;
+    width: 100%;
+  }
+
+  .hero__visit {
+    margin-block-start: 32px;
+    padding-inline-start: 16px;
+    gap: 32px;
+    position: unset;
+    z-index: unset;
+  }
+
+  .hero__h2 {
+    font-size: 60px;
+    line-height: 55px;
+  }
+
+  .hero span {
+    width: 343px;
+  }
+
+  /* MAIN SECTION - GRID */
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 120px;
+    gap: 16px;
+    align-items: center;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+  }
+
+  .main__top {
+    flex-direction: column-reverse;
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+  .gallery__day {
+    width: 343px;
+    gap: 25px;
+  }
+
+  .main__image-m1 {
+    height: 480px;
+  }
+
+  .inspired {
+    width: 343px;
+    height: 293px;
+    padding-block-start: 48px;
+    padding-inline-end: 24px;
+    padding-block-end: 48px;
+    padding-inline-start: 24px;
+  }
+
+  /* FOOTER HOMEPAGE */
+
+  .footer {
+    padding-block: 48px;
+    padding-inline: 32px;
+    flex-direction: column;
+    gap: 38px;
+  }
+
+  .footer__logo {
+    margin-inline-end: 0;
+  }
+
+  .footer__p {
+    width: 311px;
+    margin-inline-end: 0;
+  }
+
+  /* LOCATION PAGE */
+
+  .home__button {
+    left: 0;
+  }
+
+  .location {
+    padding-block-start: 48px;
+    padding-inline: 16px;
+    padding-block-end: 56px;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .location__h3 {
+    font-size: 50px;
+    line-height: 45px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .location__details {
+    padding-inline: auto;
+    width: unset;
+  }
+
+  .footer__location {
+    margin-block-start: 0;
+  }
+
+  .location__socials {
+    width: 100px;
   }
 }
